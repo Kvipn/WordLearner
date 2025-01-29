@@ -1,6 +1,6 @@
 ﻿namespace WordLearner.Domain
 {
-    public class Class1
+    public class Entities
     {
 
     }
