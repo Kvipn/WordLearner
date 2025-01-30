@@ -1,13 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordLearner.API", "WordLearner.API\WordLearner.API.csproj", "{595EE7C0-5741-4335-B5D5-EE8E1C1F1247}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6C8698A-0BFD-4688-88C9-0DBDBB796FF6} = {A6C8698A-0BFD-4688-88C9-0DBDBB796FF6}
+		{F1ADD1A3-CA68-4D07-BE9D-0025E9E15686} = {F1ADD1A3-CA68-4D07-BE9D-0025E9E15686}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordLearner.Domain", "WordLearner.Domain\WordLearner.Domain.csproj", "{F1ADD1A3-CA68-4D07-BE9D-0025E9E15686}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordLearner.Infra", "WordLearner.Infra\WordLearner.Infra.csproj", "{A6C8698A-0BFD-4688-88C9-0DBDBB796FF6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F1ADD1A3-CA68-4D07-BE9D-0025E9E15686} = {F1ADD1A3-CA68-4D07-BE9D-0025E9E15686}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

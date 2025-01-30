@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using WordLearner.Infra;
 
 namespace WordLearner.API
 {
@@ -8,7 +10,8 @@ namespace WordLearner.API
 
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("Default")));
+    options.UseSqlite(builder.Configuration.GetConnectionString("Default"), 
+    b => b.MigrationsAssembly("WordLearner.Infra")));
             
             
             // Add services to the container.
